@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+@media screen and (max-width:768px) {
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+  
+    .navbar_logo {
+      margin-left: 0 !important;
+    }
+  
+    .navbar_menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .navbar_menu li {
+      text-align: center;
+    }
+
+  
+    .navbar_login {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .depth1:hover ul.submenu {
+      overflow: hidden;
+    }
+  
+  }
+  
+  @media (min-width: 1200px) {
+    /* 푸터 */
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+      /* 푸터 */
+    .container {
+      width: 970px;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3155a4;
+
+    /* padding: 8px 12px; */
+    white-space: nowrap;
+  }
+  
+  
+  .navbar_logo {
+    margin-left: 50px;
+    font-family: 'Nanum Gothic', cursive;
+    font-weight: 700;
+    font-size: 1.554em;
+    color: #fff;
+  
+  }
+  
+  .navbar_menu {
+    font-family: 'Nanum Gothic', cursive;
+    display: flex;
+    font-size: 1.4rem;
+    list-style: none;
+    padding-left: 0;
+    letter-spacing: -2px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .depth1:after {
+    padding-bottom: 20px;
+    width: 124px;
+    display: block;
+    content: '';
+    border-bottom: solid 4px #E8745D;
+    /* #274001; */
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .navbar_menu li.depth1:nth-child(2):after  {
+    width: 125px;
+  }
+
+  .navbar_menu li.depth1:nth-child(3):after  {
+    width: 160px;
+  }
+
+  .navbar_menu li.depth1:nth-child(4):after  {
+    width: 100px;
+  }
+  
+  .depth1:hover:after {
+    transform: scaleX(1);
+    background-color: transparent;
+  }
+  
+  .depth1:hover {
+    background-color: transparent;
+  }
+  
+  /* main hover시 메뉴 나오게함  */
+  .depth1:hover ul.submenu {
+    display: block;
+  }
+  
+  .depth1 {
+    margin: 24px 20px 0 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .submenu {
+    height: 0;
+    /* overflow:hidden; */
+    position: absolute;
+    top: 49px;
+    display: none;
+  }
+  
+  .submenu>li {
+    
+    /*background-color:rgba(109,152,186,0.5); #bfc7be; 
+    color: #6d98ba; */
+    color: #fff;
+    background-color:#93A603;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 17px;
+    margin: 0;
+    width: 125px;
+    padding: 10px 5px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+  
+  .submenu li:hover {
+    color: #274001;
+    font-weight: 700;
+  }
+  
+  
+  .navbar_login {
+    padding-left: 0px;
+    list-style: none;
+    color: #eee;
+    display: flex;
+  }
+  
+  .navbar_login li {
+    padding: 8px 12px;
+  }
+  
+  .navbar_login li a:hover {
+    color: #274001;
+  }
+  
+  
+  footer {
+    width: 100%;
+    /* 너비 */
+    height: 100px;
+    /* 높이 */
+    background: gray;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container div {
+    display: inline-flex;
+    float: left;
+    line-height: 100px;
+  }
+  
+  
+  footer ul {
+    display: flex;
+    float: right;
+    line-height: 100px;
+  }

@@ -1,0 +1,121 @@
+ 
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        /* background:url('../images/sta-banner.jpg'); */
+        /* background-color: #4e79b8; */
+        /* background-color: #e8f6fb; */
+        border-bottom: 1px dotted #3155a4;
+        height: 116px;
+        text-align: center;
+        line-height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    /* 게시판 테이블 */
+
+    table{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 14px;
+        border: 1px solid #e8e6e6;
+    }
+
+    th{
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    tr, td{
+        border: 1px solid #e8e6e6;
+    }
+
+    td{
+        padding:5px 0;
+    }
+
+    input{
+        width: 97%;
+        height: 38px;
+    }
+
+    input type[file]{
+        border: none;
+    }
+
+    textarea{
+        width: 97%;
+        height: 400px;
+        white-space: pre;
+        font-size: 14px;
+        color: #5b5b5b;
+        line-height: 24px;
+        text-align: left;
+        resize: none;
+        border:1px solid #999;
+    }
+
+
+    table tr:first-child{
+        border-top:2px solid #222;
+        padding: 12px 0;
+        border-right: 1px solid #e8e6e6;
+    }
+    
+    table tr:nth-child(2) td div span {
+    	float: left;
+    	margin-left: 20px;
+    }
+
+    table tr:nth-child(3) input{
+        height: auto;
+        border: none;
+    }
+
+    #no_paging span:nth-child(2){
+        border: 1px solid #888;
+    }
+
+    /* board_write 저장 목록 버튼 */
+    #board_write{
+        display: flex;
+        justify-content: end;
+        grid-gap: 10px;
+    }
+
+    #board_write button{
+        min-width:145px;
+        height: 41px;
+        color: #FFF;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        background:#3155a4;
+    }
+
+    #board_write #board_return{
+        background-color: #403F3F;
+    }
