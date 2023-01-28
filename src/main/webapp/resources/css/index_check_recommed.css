@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+
+    #recommend_wrap {
+        height: 220px;
+        margin-top: 8rem;
+    }
+
+    #recommend_wrap h2 {
+     text-align: center;
+     margin-bottom: 3.5rem;
+    }
+
+
+    .check_region {
+        display: flex;
+
+    }
+
+    .check_region input[type="checkbox"] {
+        display: none;
+    }
+
+    .check_region label {
+        width: 22%;
+        background-color: rgba(240, 240, 240, 0.514);
+        border: 1px solid #ddd;
+        color: #3155a4;
+        text-align: center;
+        padding:10px 0;
+        margin: 3px 15px;
+        border-radius: 20px;
+    }
+
+    .check_region label:hover {
+        background-color: #3155a4;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .check_region input:checked + label {
+        background-color: #3155a4;
+        color: #fff;
+
+    }
+
+    .result_recommed input{
+        width: 150px;
+        background-color: rgba(240, 240, 240, 0.514);
+        border: 1px solid #ddd;
+        height: 50px;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 41%;
+        margin-top: 20px;
+    }
+
+    .result_recommed input:hover{
+        background-color: #3155a4;
+        color: #fff;
+    }
+
+
+    /* 농산물 결과 */
+    #region_result{
+        text-align: center; 
+        height: 800px;      
+        margin-bottom: 250px;
+        margin-top: 8rem;
+    }
+
+    #region_result span{
+        color: tomato;
+    }
+
+    #region_result ul{
+        height: inherit;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    #region_result ul li{
+        text-align: left;
+    }
+
+    #region_result ul li h5 img{
+        width: 100%;
+    }
+ 
+    #region_result ul li h4{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    #region_result ul li p{
+        text-align: left;
+        line-height: 40px;
+    }
+

@@ -1,0 +1,258 @@
+ 
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    .form_wrap{
+    	margin-bottom:20px;
+    }
+    
+    
+    #sub-title{
+        border-bottom: 1px dotted #3155a4;
+        text-align: center;
+        line-height: 116px;
+        height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+
+    #info-bottom ul{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        color: #777;
+        letter-spacing: -0.008rem;
+        font-size: 14px;
+    }
+
+    #info-bottom p{
+        line-height: 30px;
+    }
+
+    .post_up{
+        background-color: #fbfbfb;
+        color: #5b5b5b;
+        font-weight: 400;
+        margin: 20px 0;
+        font-size: 14px;
+        padding-left: 20px;
+/*         cursor: pointer; */
+    }
+
+    .board_write{
+        display: inline-block;
+        justify-content: end;
+        grid-gap: 10px;
+        float: right;
+    }
+
+    .board_return{
+        background-color: #403F3F;
+        min-width:145px;
+        height: 41px;
+        color: #FFF;
+        border: none;
+        margin: 10px 0 15px 0;
+        cursor: pointer;
+        background:#403F3F;
+    }
+
+    #comment{
+    	clear: both;
+        text-align: center;
+        background-color: #f2ede9;
+        padding: 25px 0;
+    }
+
+    #comment p{
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    #comment input{
+        width: 85%;
+        height: 62px;
+    }
+
+	#no_login_wrap{
+		display:inline-block;
+		width: 96px;
+        height: 62px;
+        border: none;
+        color: #fff;
+        background-color: #3155a4;
+        cursor: pointer;
+        line-height:62px;
+	}
+	
+	#no_login{
+		width: 96px;
+        height: 62px;
+	}
+    
+    #comment button{
+        width: 10%;
+        height: 62px;
+        border: none;
+        color: #fff;
+        background-color: #3155a4;
+        cursor: pointer;
+    }
+    
+    
+    
+    /*
+    	댓글부분
+    */
+    
+
+    .reply{
+    	padding: 20px 0 0 0;
+    	height: auto;
+    }
+    
+    .reply_id{
+    	color:222;
+    	font-size:1rem;
+    	margin-right:0.5rem;
+    }
+    
+    .reply_content{
+    	padding:10px 0;
+    }
+    
+    
+    .reply_ul_sec, .reply_ul_2{
+    	display : flex;
+    }
+    
+    .reply_ul{
+    	font-size:0.9rem;
+    	color:#333;
+    	margin-bottom:5px;
+    	letter-spacing: -0.8px;
+    	display:inline-flex;
+    	margin-right:15px;
+    }
+    
+	.reply_ul_sec{
+		font-size:0.8rem;
+    	color:#888;
+    	letter-spacing: -1px;
+	}
+
+    .reply_ul_sec li{
+    	margin-right: 7px;
+    }
+    
+    .write_date{
+    	font-size:0.8rem;
+    	color:#888;
+    	letter-spacing: -1px;
+    }
+
+    .edit_date{
+    	font-size:0.8rem;
+    	color:#888;
+    	margin-left:0.4rem;
+   		letter-spacing: -1px;
+    }
+    
+    
+    .reply_2 {
+    	padding : 20px 20px 20px 20px;
+    	background: #fafafa;
+    }
+    
+    .reply_left{
+	    float: left;
+	    display: inline-flex;
+    }
+    
+    .reply_2 span {
+    	font-size:0.8rem;
+    	color:#888;
+   		letter-spacing: -1px;
+   		margin-top:5px;
+    }
+    
+    .reply_content span{
+		color:orange;
+		font-size:1rem;
+    }
+    
+    
+    #edit_reply2{
+    	padding:7px 10px;
+    	width:100%;
+    }
+    
+    #edit_reply2:focus{
+    	outline:none;
+    	border:1px solid #ddd;
+    }
+    
+    .reply_2 li{
+    	font-size:0.8rem;
+    	color:#888;
+   		letter-spacing: -1px;
+    }
+    
+    .ml-2{
+    	padding-left:0.5rem;
+    }
+ 
+ 
+ 	.reply_ul_2 li{
+ 	    	margin-right: 7px;
+ 	}
+ 	
+ 	
+ 	.rereply_form_wrap{
+ 		/* display:none; */
+ 	}
+ 	
+ 	
+ 	textarea{
+        width: 93%;
+        min-height: 61.2px;
+        white-space: pre;
+        font-size: 14px;
+        color: #5b5b5b;
+        line-height: 24px;
+        text-align: left;
+        resize: none;
+        border:1px solid #999;
+        margin-top:5px;
+    }
+    
+    .rereply_btn{
+    	padding:21px 17px;
+    	float:right;
+    	margin-top:5px;
+    }
+    
+    

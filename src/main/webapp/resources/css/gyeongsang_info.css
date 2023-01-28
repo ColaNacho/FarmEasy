@@ -1,0 +1,179 @@
+    
+    
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        border-bottom: 1px dotted #3155a4;
+        text-align: center;
+        line-height: 116px;
+        height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    #sta-location{
+        margin: 45px auto;
+    }
+
+
+    #sta-location ul{
+        display: flex; 
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: space-between;
+        color: #888;
+        /* color: #333; */
+    }
+    
+    #sta-location ul li{
+        letter-spacing: -2px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    
+    /* 지역별로 페이지 만들시 */
+
+    #sta-location ul li span{
+        border-right: 1px solid rgb(149, 149, 149);
+        padding-right: 10px;
+        margin-right: 7px;
+    }
+
+    #sta-location ul li span:nth-child(3){
+        font-weight: 700;
+        color: #333;
+    }
+
+
+    #sta-location ul li span:last-child{
+        border:none;
+    }
+
+    #sta-location ul li:first-child span a:hover{
+        font-weight: 700;
+        color: #333;
+    }
+
+    #sta-location ul li:nth-child(2){
+        color: #777;
+        font-size: 14px;
+    }
+    
+    #sta-location ul li:nth-child(2) a:hover{
+        color:#333;
+        font-weight: 700;
+    }
+
+  /* sub-name */
+
+  #sub-name{
+    font-size: 25px;
+    font-weight: 700;
+    margin : 50px auto;
+    /* border-bottom: 1px solid #ccc; */
+    font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    #sub-name span{
+    border-bottom: 2px solid #222;
+    }   
+
+   
+    /*  지역 정책 지도 정책 부분 */
+
+    #info-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* 
+    #map_left{
+        float: left;
+        height: 440px;
+    }
+
+    #map_left h4{
+        color:#E8745D;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.08em;
+    }
+
+    #map_left div{
+        border-top: 2px solid #E8745D;
+    } */
+
+    #map_right{
+        width: inherit;
+        height: 400px;
+    }
+
+    #map_right h4{
+        color:#E8745D;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.08em;
+
+    }
+
+    table{
+        border-collapse: collapse;
+        width: inherit;
+        text-align: center;
+        height: inherit;
+    }
+
+    th, td {
+        border: 1px solid #e6e6e6;
+      }
+    
+    /* 정책 자세히보기 */
+    tr > td:nth-child(5) {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #map_right table tr:first-child{
+        border-top: 2px solid #E8745D;
+    }
+
+    #map_right table tr td:first-child{
+        width: 80px;
+    }
+    
+    /* 페이징 처리 */
+    #no_paging{
+        height: 150px;
+    }
+
+    #no_paging span{
+        padding:2px 5px 2px 8px;
+        margin: 0 2px;
+        color: rgb(139, 139, 139);
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    #no_paging span:nth-child(2){
+        border: 1px solid #888;
+    }

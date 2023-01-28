@@ -1,0 +1,150 @@
+    
+    
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        border-bottom: 1px dotted #3155a4;
+        text-align: center;
+        line-height: 116px;
+        height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    #sta-location{
+        margin: 45px auto;
+    }
+
+
+    #sta-location ul{
+        display: flex; 
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: space-between;
+        color: #888;
+        /* color: #333; */
+    }
+    
+    #sta-location ul li{
+        letter-spacing: -2px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    
+    /* 지역별로 페이지 만들시 */
+
+    #sta-location ul li span{
+        border-right: 1px solid rgb(149, 149, 149);
+        padding-right: 10px;
+        margin-right: 7px;
+    }
+
+    #sta-location ul li:first-child span:first-child{
+        font-weight: 700;
+        color: #333;
+    }
+
+    #sta-location ul li:first-child span a:hover{
+        font-weight: 700;
+        color: #333;
+    }
+
+    .main-container{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top: 5%;
+    }
+    
+    .main-container .main-wrap{
+        width: 960px;
+        
+    }
+    
+    /* 정책 상세 조회 div */
+    .signup_div {
+        border-top: 2px solid #E8745D;
+    }
+    
+    /* 정책 상세 테이블 */
+    table, tr, td {
+        border: 1px solid #e6e6e6;
+        border-collapse: collapse;
+    }
+
+    td {
+        width: 30%;
+        height: 80px;
+        border-bottom: dotted 1px rgba(128, 128, 128, 0.411);
+        /* color: #5c5c5c; */
+        padding: 5px 10px;
+        font-size: smaller;
+    }
+    
+    td.td_name{
+        color: #222;
+        width: 10%;
+        font-weight: 800;
+        font-size: small;
+    }
+    
+    /* 닫기 버튼 */
+    .login-button-wrap {
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    .login-button-wrap > a {
+        width: 150px;
+        height :48px;
+        font-size: 15px;
+        padding: 10px 10px;
+        background:#3155a4;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    .login-button-wrap .pick{
+        background-color: unset;
+        border: 1px solid #dcdee0;
+        color:#3155a4;
+        margin-right: 10px;
+    }
+
+    .login-button-wrap .close_info {
+        padding: 10px 28px;
+    }
+    
+    
+    .login-button-wrap .pick:hover{
+        border: 1px solid #333;
+        
+    }
+    
+    .login-button-wrap .close_info:hover{
+        color: #222;
+    }
