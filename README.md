@@ -1,2 +1,6 @@
-# FarmEasy
-![image](https://user-images.githubusercontent.com/114913378/216836274-b06ae671-45a6-4f18-bc74-34efd9775e13.png)
+# springFarmEasy
+소개 
+귀농 인구를 위한 지역 및 농작물 추천 서비스
+작업 기간 : 1개월-2개월
+작업 인원 : 2명자
+스프링 프레임워크를 이용해 구현
