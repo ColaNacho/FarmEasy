@@ -103,7 +103,7 @@
 		      </div>
 		      <div id="tab02">
 				<ul>
-					<li class="product_N"><a href="/c_bigData/마늘" data-value="마늘">마늘</a></li>
+					<li class="product_N"><a href="/c_bigData/마늘" data-value="마늘">마늘</a></li> 
 	      			<li class="product_N"><a href="/c_bigData/사과" data-value="사과">사과</a></li>
 	      			<li>배</li>
 		      		<li>표고버섯</li>
