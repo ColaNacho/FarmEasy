@@ -31,14 +31,14 @@
 	<nav class="navbar">
 		<!-- logo -->
 		<div class="navbar-logo">
-			<a href="index">귀농쉽농</a>
+			<a href="/">귀농쉽농</a>
 		</div>
 		<!-- menu -->
 		<ul class="navbar-menu">
-			<li class="depth1"><a href="a_select_step">길라잡이</a>
+			<li class="depth1"><a href="/a_select_step">길라잡이</a>
 				<ul class="submenu">
-					<li><a href="a_select_step">귀농절차</a></li>
-					<li><a href="a_select_chung">지역선정</a></li>
+					<li><a href="/a_select_step">귀농절차</a></li>
+					<li><a href="/a_select_chung">지역선정</a></li>
 				</ul></li>
 			<li class="depth1"><a href="/b_all_info">정책 조회</a>
 				<ul class="submenu">
@@ -50,7 +50,7 @@
 			<li class="depth1"><a href="/d_board">게시판</a>
 				<ul class="submenu">
 					<li><a href="/d_board">게시판</a></li>
-					<li><a href="d_notice">갤러리</a></li>
+					<li><a href="/d_notice">갤러리</a></li>
 				</ul></li>
 		</ul>
 		<!-- icon -->
@@ -133,7 +133,7 @@
 		</div>   <!-- tab -->
 
 
-<div class="big_wrap mt-4">
+<div class="big_wrap mt-4 mb-4">
 	<div class="wd-basic-960 mb-auto label_bigBox_wrap" style="height: auto;">
 		<ul class="label_bigBox">
 			<li><br>품목</li>
@@ -180,7 +180,7 @@
 
 </div> <!-- big_wrap -->
 
-	<div class="wd-basic-960 predict_graph">
+	<div class="wd-basic-960 predict_graph mb-4">
     	<canvas id="productChart" width="960px" height="250px"></canvas>
     </div>
 
