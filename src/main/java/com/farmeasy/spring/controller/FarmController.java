@@ -248,7 +248,7 @@ public class FarmController {
 		return "redirect:/content_view?bId="+board_id;
 	}
 	
-	
+	 
 	
 // Member
 	
