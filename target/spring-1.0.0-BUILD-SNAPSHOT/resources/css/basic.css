@@ -1,0 +1,204 @@
+
+    .mt-2 {
+        margin-top: 0.5rem;
+    }
+
+    .mt-5 {
+        margin-top: 5rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 3rem;
+    }
+
+    .mb-5 {
+        margin-bottom: 5rem;
+    }
+
+    .mr-2 {
+        margin-right: 0.5rem;
+    }
+
+    .mr-5 {
+        margin-right: 5rem;
+    }
+
+    .ml-2 {
+        margin-left: 0.5rem;
+    }
+
+    .ml-5 {
+        margin-left: 4rem;
+    }
+
+    .letter {
+        letter-spacing: -0.1rem;
+    }
+
+    .dp-r {
+        float: right;
+    }
+
+
+    * {
+        margin: 0;
+        /* 마진 리셋 */
+        padding: 0;
+        /* 패딩 리셋 */
+        box-sizing: border-box;
+        /* 박스 영역은 테두리까지 */
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+    }
+
+    /*********************************/
+    /* 헤더 영역 - 로고와 내비게이션 */
+    /*********************************/
+
+    header {
+        width: 100%;
+        background-color:rgba(191, 191, 191, 0.6);
+    }
+
+    /* 로고 */
+    #logo {
+        float: left;
+        padding-left: 20px;
+    }
+
+    #logo h1 {
+        font-family: 'Nanum Gothic', cursive;
+        font-weight: 700;
+        font-size: 1.4em;
+        letter-spacing: -0.12vw;
+        color: #555;
+    }
+
+    /* 내비게이션 */
+    nav {
+        line-height: 34px;
+    }
+
+    #topMenu>li {
+        float: left;
+        position: relative;
+        /* 서브 메뉴를 absolute로 하기 위해, 이 부분을 relative로 */
+    }
+
+    #topMenu>li>a {
+        display: block;
+        color: #777;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 20px 60px;
+        letter-spacing: -0.1vw;
+    }
+
+    #topMenu>li>a>span {
+        font-size: 0.5em;
+        /* 서브 메뉴가 있는 항목에 화살표 표시 */
+    }
+
+    #topMenu>li>a:hover {
+        color: #999;
+        /* 마우스 오버하면 색상 바뀜 */
+    }
+
+    #topMenu>li>ul {
+        display: none;
+        position: absolute;
+        width: 160px;
+        background: rgba(255, 255, 255, 0.6);
+        left: 20px;
+        margin: 0;
+    }
+
+    #tabMenu {
+        float: left;
+        width: 600px;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+
+    #login {
+        padding-left: 0px;
+        list-style: none;
+        color: #555;
+        display: flex;
+    }
+
+    #login ul {
+        display: flex;
+        color: #222;
+    }
+
+    #login ul a:hover{
+        color:#fff;
+    }
+    /* 769-1010 */
+
+
+
+    
+    @media screen and (max-width:768px) {
+
+     #container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        }
+
+    #logo{
+        margin:15px auto;
+    }
+
+    #container nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #tabMenu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #tabMenu li{
+        width: 100%;
+        text-align: center;
+    } 
+
+    #login{
+        justify-content: center;
+        width: 100%;
+    }
+
+    header div{
+        flex-direction: column;
+      }
+
+      #login ul{
+        justify-content: center;
+      }
+    }
+

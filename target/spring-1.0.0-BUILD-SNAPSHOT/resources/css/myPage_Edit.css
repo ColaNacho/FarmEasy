@@ -1,0 +1,114 @@
+:root{
+	--body-background-color: #f5f6f7;
+	--font-color: #4e4e4e;
+	--border-gray-color : #dadada;
+	--naver-green-color: #274001;
+	--naver-green-border-color: #274001;
+}
+
+
+body{
+	background:var(--body-background-color);
+}
+
+.main-container{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-top: 40px;
+}
+
+.main-container .main-wrap{
+	width: 615px;
+
+}
+
+.main-container .main-wrap .logo-wrap{
+	font-family: 'Nanum Gothic', cursive;
+    font-weight: 700;
+    font-size: 1.1em;
+    /* color: #274001; */
+	display:flex;	
+	flex-direction: column;
+	align-items: center;
+	padding-top:50px;
+	margin-bottom: 40px;
+}
+
+
+/* 회원가입 fieldset(테두리) */
+#signup_fieldset {
+	/* border-radius: 25px;
+	border: solid 1px #888; */
+	border: none;
+}
+
+.signup_div {
+	padding: 0 30px;
+}
+
+
+
+/* 회원가입 테이블 */
+td {
+	width: 30%;
+	height: 60px;
+	border-bottom: dotted 1px rgba(128, 128, 128, 0.411);
+	/* color: #9ba1a3; */
+	color: #333;
+}
+
+td span {
+	color: #274001;
+}
+
+td.td_name{
+	color: #222;
+}
+
+.login-input-wrap{
+	width: 300px;
+	height: 40px;
+	border: solid 1px var(	--border-gray-color );
+	background: white;
+}
+
+#signup_fieldset{
+	/* padding: 0 40px 25px 40px; */
+	padding: 0 25px 25px 25px;
+}
+
+
+
+
+div.signup_div #check_id{
+	font-size:12px;
+	color: red;
+	letter-spacing: -1px;
+	display: inline-block;
+    width: 100%;
+}
+
+div.signup_div .check_id_tr td{
+	height: 30px;
+}
+
+
+/* 회원가입 버튼 */
+.login-button-wrap {
+	padding-top: 35px;
+	text-align: center;
+}
+
+.login-button-wrap input{
+	width: 135px;
+	height :40px;
+	font-size: 15px;
+	background: #3155a4;
+	color: white;
+	border: solid 1px var(--naver-green-border-color);
+	border-radius: 10px;
+    margin-bottom: 10px;
+	cursor: pointer;
+}

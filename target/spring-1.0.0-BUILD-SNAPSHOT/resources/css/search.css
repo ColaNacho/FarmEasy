@@ -1,0 +1,115 @@
+   *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        background:url('../images/sta-banner.jpg');
+        /* background-color: #4e79b8; */
+        /* background-color: #e8f6fb; */
+        height: 116px;
+        text-align: center;
+        line-height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    #sta-location{
+        margin: 45px auto;
+    }
+
+
+    #sta-location ul{
+        display: flex; 
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: space-between;
+        color: #333;
+    }
+    
+    #sta-location ul li{
+        letter-spacing: -2px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    #sta-location ul li:first-child{
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    #sta-location ul li:first-child span{
+        width: 95px;
+        font-weight: normal;
+        color: #888;
+    }
+
+    #sta-location ul li:first-child span:first-child{
+        width: 95px;
+        padding-right: 10px;
+        border-right: 1px solid #777;
+    }
+
+    #sta-location ul li:first-child span:nth-child(2){
+        border-right: 1px solid #777;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #sta-location ul li:first-child span:nth-child(3){
+        padding-left: 10px;
+        color:#333;
+        font-weight: 700;
+    }
+
+    #sta-location ul li:first-child span:nth-child(1):hover,  #sta-location ul li:first-child span:nth-child(2):hover{
+        font-weight: 700;
+        color: #333;
+    }
+
+    #sta-location ul li:nth-child(2){
+        color: #777;
+        font-size: 14px;
+    }
+
+    #sta-location ul li:nth-child(2) a:hover{
+        color:#333;
+        font-weight: 700;
+    }
+
+
+    /* sub-name */
+
+    #sub-name{
+        font-size: 25px;
+        font-weight: 700;
+        margin : 50px auto;
+        border-bottom: 1px solid #ccc;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    #sub-name span{
+        border-bottom: 2px solid #222;
+    }
+    
+    /* content-s 본문*/
+
+
+    /* #content-s{
+        display: flex;
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+    } */
+
+
+

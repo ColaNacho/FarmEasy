@@ -1,0 +1,187 @@
+ 
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        /* background:url('../images/sta-banner.jpg'); */
+        border-bottom: 1px dotted #3155a4;
+        height: 116px;
+        text-align: center;
+        line-height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    #sta-location{
+        margin: 45px auto;
+    }
+
+
+    #sta-location ul{
+        display: flex; 
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: space-between;
+        color: #888;
+        /* color: #333; */
+    }
+    
+    #sta-location ul li{
+        letter-spacing: -2px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    
+    /* 지역별로 페이지 만들시 */
+    /* #sta-location ul li:first-child span:first-child{
+        font-weight: 700;
+        font-size: 17px;
+    } */
+
+    #sta-location ul li span{
+        padding-right: 5px;
+        margin-right: 7px;
+    }
+
+    #sta-location ul li span:last-child{
+        border:none;
+    }
+
+    /* #sta-location ul li:first-child span:nth-child(n+2){
+        font-weight: normal;
+        color: #888;
+    } */
+
+    #sta-location ul li:first-child span a:hover{
+        font-weight: 700;
+        color: #333;
+    }
+
+    #sta-location ul li:nth-child(2){
+        color: #777;
+        font-size: 14px;
+    }
+
+    #sta-location ul li:nth-child(2) a:hover{
+        color:#333;
+        font-weight: 700;
+    }
+
+    /* 갤러리 부제목 */
+    #gallery_photo h3 {
+        float: left;
+        padding-bottom: 13px;
+        font-size: larger;
+        color: #E8745D;
+    }
+
+    #gallery_photo .gallery_total{
+        float: right;
+        font-size: 14px;
+        color:#717171;
+        letter-spacing: -0.08rem;
+        margin-top: 10px;
+    }
+
+    /* 갤러리 테이블 */
+
+    .ga_table_div {
+        clear: both;
+        border: 1px solid #eee;
+        border-top: 2px solid #E8745D;
+    }
+
+    .ga_table_div table {
+        border-collapse: collapse;
+        width: 960px;
+        height: 450px;
+    }
+
+    td{
+        height: 0;
+    }
+
+    .ga_title{
+        font-size: 17px;
+        font-weight: 800;
+        color:#313131;
+        padding-top:15px;
+    }
+
+  
+    .ga_td_middle {
+        height: 0;
+        font-size: 14px;
+        color: #717171;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.05em;
+    }
+
+
+    .ga_tr_bottom {
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        color: #8b8b8b;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        height: 59px;
+    }
+    
+    .ga_tr_bottom span{
+        color:#717171;
+        font-weight: 700;
+    }
+    
+    /*  이미지 */
+    .ga_td_left {
+        text-align: center;
+        width: 210px;
+    }
+
+    .ga_table_div img {
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        margin: 12px 0;
+    }
+
+ 
+
+
+
+    /* 페이징 처리 */
+
+    #no_paging span{
+        padding:2px 5px 2px 8px;
+        margin: 0 2px;
+        color: rgb(139, 139, 139);
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    #no_paging span:nth-child(2){
+        border: 1px solid #888;
+    }
+        

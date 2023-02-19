@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@media screen and (max-width:768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_logo{
+    margin:0;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_login {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #contents{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tabMenu{
+    /* flex-direction: column; */
+    height: 400px;
+  }
+
+  #links{
+    /* flex-direction: column; */
+    height: 100%;
+    margin-top:5rem;
+    margin-left: 20px
+  }
+
+  #bg-img{
+    height: 1000px;
+  }
+
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+.container {
+  width: 970px;
+}
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(39,64,1, 0.35); */
+    background-color: #bfc7be;
+    padding: 8px 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .navbar_logo {
+    margin-left: 50px;
+    font-family: 'Nanum Gothic', cursive;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: -0.12vw;
+    color: #fff;
+
+  }
+
+  .navbar_menu {
+    font-family: 'Nanum Gothic', cursive;
+    display: flex;
+    font-size: 1.4rem;
+    list-style: none;
+    padding-left: 0;
+    letter-spacing: -2px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .depth1:after{
+    display: block;
+    content: '';
+    border-bottom: solid 3px #274001;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .depth1:hover:after {
+    transform: scaleX(1);
+    background-color: transparent !important;
+  }
+
+  .depth1:hover{
+  background-color: transparent !important;
+  }
+/* main hover시 메뉴 나오게함 */
+  .depth1:hover ul.submenu{
+    display: block;
+    } 
+
+  .depth1 {
+    padding: 8px 30px;
+    position: relative;
+  }
+  
+  .submenu{
+    height: 0;
+    /* overflow:hidden; */
+    position: absolute;
+    top:53px;
+    display: none;
+  }
+
+  .submenu > li{
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.12);
+    font-size: 15px;
+    margin: 0;
+    width: 100px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+  .submenu li:hover {
+    color:#274001;
+  }
+
+  .navbar_login {
+    padding-left: 0px;
+    list-style: none;
+    color: #eee;
+    display: flex;
+  }
+
+  .navbar_login li {
+    padding: 8px 12px;
+  }
+
+  .navbar_login li a:hover {
+      color: #274001;
+   }
+    
+
+
+    #bg-img{
+      /* background-image:; */
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.12),
+          rgba(0, 0, 0, 0.12)
+        ),  url('../images/main-bg.gif');
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* position: relative; */
+      height: 670px;
+    }
+
+
+#contents{  
+  width: 1250px;
+  margin: 0 auto;
+   /* 너비 */
+  height:500px;  /* 높이 */  
+  padding-top: 100px; 
+}
+
+/* 탭 메뉴 */
+#tabMenu{  
+  float:left;  /* 왼쪽으로 플로팅 */ 
+  width:600px;   /* 너비 */ 
+  height:100%;   /* 높이 */
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  letter-spacing: -0.1vw;
+}
+#tabMenu h2{
+  text-align: center;
+  font-size: 55px; 
+  font-weight: normal; 
+  letter-spacing: -0.4vw;
+}
+
+#tabMenu h1{
+  text-align: center; 
+  margin-top:50px; 
+  margin-bottom: 10px;
+}
+
+
+/* 퀵 링크 */ 
+#links{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:600px;   /* 너비 */
+  height:100%;/* 높이 */
+  position: relative;
+}
+
+#links img{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer{   
+  width:100%;   /* 너비 */
+  height:100px;  /* 높이 */
+  background:gray;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container div{
+  display: inline-flex;
+  float: left;
+  line-height: 100px;
+}
+
+
+footer ul {
+  display: flex;
+  float: right;
+  line-height: 100px;
+}

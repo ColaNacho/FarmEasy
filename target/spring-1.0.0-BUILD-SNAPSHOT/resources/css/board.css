@@ -1,0 +1,182 @@
+ 
+  *{
+    font-family: 'Nanum Gothic', cursive;
+   }
+   
+   
+   @media screen and (max-width:768px) {
+    .wd-basic-960{
+        width: 760px;
+    }
+   }
+
+
+
+   .wd-basic-960{
+        width: 960px;
+    } 
+     
+   .mb-auto{
+        margin: 0 auto;
+    }
+    
+    
+    #sub-title{
+        /* background:url('../images/sta-banner.jpg'); */
+        border-bottom: 1px dotted #3155a4;
+        height: 116px;
+        text-align: center;
+        line-height: 116px;
+        font-size: 30px;
+        color: rgb(84, 84, 84);
+        font-weight: 700;
+    }
+
+    #sta-location{
+        margin: 45px auto;
+    }
+
+
+    #sta-location ul{
+        display: flex; 
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        justify-content: space-between;
+        color: #888;
+        /* color: #333; */
+    }
+    
+    #sta-location ul li{
+        letter-spacing: -2px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    
+    /* 지역별로 페이지 만들시 */
+    /* #sta-location ul li:first-child span:first-child{
+        font-weight: 700;
+        font-size: 17px;
+    } */
+
+    #sta-location ul li span{
+        padding-right: 5px;
+        margin-right: 7px;
+    }
+
+    #sta-location ul li span:last-child{
+        border:none;
+    }
+
+    /* #sta-location ul li:first-child span:nth-child(n+2){
+        font-weight: normal;
+        color: #888;
+    } */
+
+    #sta-location ul li:first-child span a:hover{
+        font-weight: 700;
+        color: #333;
+    }
+
+    #sta-location ul li:nth-child(2){
+        color: #777;
+        font-size: 14px;
+    }
+
+    #sta-location ul li:nth-child(2) a:hover{
+        color:#333;
+        font-weight: 700;
+    }
+
+    /* sub-name */
+
+    #sub-name{
+        font-size: 25px;
+        font-weight: 700;
+        margin : 50px auto;
+        border-bottom: 1px solid #ccc;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    #sub-name span{
+        border-bottom: 2px solid #222;
+    }
+
+    /* 게시판 테이블 */
+
+    table{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    table th:first-child{
+        border-left: 1px solid #e8e6e6;
+    }
+
+    th{
+        border-top:2px solid #222;
+        padding: 12px 0;
+        border-right: 1px solid #e8e6e6;
+    }
+    td{
+        padding:14px 0;
+        border-bottom: 1px solid #e8e6e6;
+    }
+    
+    thead tr th:nth-child(1) {
+    	width: 70px;;
+    }
+    
+    thead tr th:nth-child(3) {
+    	width: 150px;
+    }
+    
+    thead tr th:nth-child(4) {
+    	width: 90px;
+    }
+    
+    thead tr th:nth-child(5) {
+        width: 50px;
+    }
+
+
+    #no_btn{
+        background-color: #3155a4;
+        color: #fff;
+        padding: 15px 22px;
+        margin-top: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        float: right;
+    }
+    .text-aglin-left{
+    	text-align : left;
+    	padding-left:35px;
+    }
+
+    #no_btn:hover {
+        color: #222;
+    }
+
+    #no_paging ul {
+    	display: flex;
+    	text-align:center;
+    	justify-content: center;
+    }
+    
+    #no_paging ul li{
+        padding:3px 5px 3px 8px;
+        margin: 0 2px;
+        color: rgb(139, 139, 139);
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    #no_paging span:nth-child(2){
+        border: 1px solid #888;
+    }
+    
+   .pasing:hover{
+   		font-weight: 700;
+   }

@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+#body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* background-color: #eee; */
+}
+
+/* #body::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("../images/bg-01-erom.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3;
+} */
+
+#layout::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("../images/bg-02-erom.jpg");
+  background-size: cover;
+  background-position: right center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+@media (min-width: 1500px) {
+
+}
+
+
+
+/* layout 중간 배너 */
+
+#layout {
+  display: grid;
+  width: 100%;
+  height: 95vh;
+  margin: 0 auto 25vh auto;
+  grid-gap: 15px;
+  position: relative;
+    /* background-image:url('../images/banner_02_final.jpg'); */
+  /* background-image: url('../images/bg-02-erom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center right; */
+}
+
+
+.box1 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  padding: 30px 30px;  
+}
+
+
+
+.box2 {
+  grid-row: 1/3;
+  grid-column: 3/5;
+  color: rgb(56, 56, 56);
+  margin-left: 22%;
+  margin-top: 18vh;
+}
+
+/* box2  */
+
+
+
+.box2 h2 {
+  font-size: 2.3rem;
+  font-weight: normal;
+  color: #323232;
+  letter-spacing: -0.06em;
+  margin-bottom: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#graph{
+  background-color: rgba(255, 255, 255, 0.55); 
+  width: 650px;
+  height: 330px;
+  border-radius: 40px;
+  padding:50px 50px 0px 50px;
+}
+
+
+#graph p{
+  font-size: 1.3rem;
+  color: #323232;
+  line-height: 1.9rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.box2 #banner-bt-m{
+  display: flex;
+  margin-top: 50px;
+  color:#fff;
+  font-size: 1.2rem;
+}
+
+.box2 #banner-bt-m li{
+  background-color: #525152;
+  /* background-color: #3155a4; */
+  padding: 15px 30px 15px 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 220px;
+  text-align: center;
+
+}
+
+.box2 #banner-bt-m li:first-child{
+  margin-right:20px;
+}
+
+
+
+
+
+
+/* 배너 하단 div */
+#gra-container{
+ margin: 50px auto 150px auto;
+ width: 1200px;
+}
+
+.font-color-title{
+  color: #555;
+}
+
+.main_gra{
+  width: 46%;
+  height: 350px;
+  display: inline-block;
+}
+
+.main_gra h4{
+  margin: 9.5px 9.5px 18px 9.5px;
+  display: inline-block;
+}
+
+.main_gra #plus_info {
+  font-size: x-large;
+  font-weight: bolder;
+  float: right;
+  padding-right: 10px;
+  color: #3155a4;
+}
+
+.main_gra #text_info {
+  font-size: 15px;
+  font-weight: bolder;
+  float: right;
+  padding-right: 10px;
+  color: #3155a4;
+  line-height: 20px;
+}
+
+.main_gra #plus_info:hover{
+  transform: rotate( -10deg );
+}
+
+.gra_left{
+  float: left;
+  margin-right: 65px;
+}
+
+
+
+/* 배너 하단 좌측 성공사례  */
+
+/* 지역 탭 div */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  /* background-color:#3155a4; */
+  background-color:#fff;
+  width: 100%;
+}
+
+/* 지역 탭 버튼 */
+/* .tab button,  버튼 부분 지움 */
+
+
+.tab label{
+  background-color: inherit;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 33.33%;
+  color: #3155a4;
+  display: inline-block;
+  margin: 0 0;
+  text-align: center;
+  border: none;
+  border-right: 1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.tab label:last-child{
+  border-right: none;
+  width: 33.34%;
+}
+
+.tab input:checked + label{
+  background-color: #3155a4;
+  color: #fff;
+}
+
+.tab input[type="radio"]{
+  display: none;
+}
+
+
+
+.tablinks:nth-child(n+2){
+  border-left: 1px solid #ccc;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover{
+  background-color: #3155a4;
+  color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #3155a4;
+  color: #fff;
+}
+
+/* 지역 리스트 div */
+.tabcontent {
+  display: none;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  width: 100%;
+  height: 259px;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+/* 우수사례 테이블 */
+
+#gyeong table tr:nth-child(1) th:nth-child(1){
+  width: 57.6px;
+
+}
+
+.good_table {
+  width: 100%;
+  height: 101%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.good_table tr:first-child {
+  padding: 5px 0;
+}
+
+.good_table tr, th, td {
+  /* border: 1px solid rgb(210, 208, 208); */
+  font-size: small;
+  border-left: none;
+}
+
+.good_table th{
+  border-right: 1px solid rgb(210, 208, 208);
+}
+
+.good_table th:last-child{
+  border-right: none;
+}
+
+.good_table tr{
+  border-left: 1px solid rgb(210, 208, 208);
+  border-right: 1px solid rgb(210, 208, 208);
+  border-bottom: 1px solid rgb(210, 208, 208);
+}
+
+.good_table tr td{
+  border-right: 1px solid rgb(210, 208, 208);
+}
+
+
+.good_table tr td:nth-child(3){
+  border-right:none;
+}
+
+
+.good_table tr td a:hover {
+  font-weight: 800;
+}
+
+.good_table th {
+  background-color: #3155a40d;
+  border-left: none;
+  border-bottom: 1px solid rgb(210, 208, 208);
+}
+
+.good_table th:nth-child(3){
+  border-right: none;
+}
+
+/* 귀농관련 뉴스 리스트 */
+
+.news_list {
+  list-style-type: disc;
+  width: 100%;
+  padding: 20px 0 20px 30px;
+}
+
+.news_list li {
+  padding-top: 20px;
+}
+
+.news_list li a {
+  font-size: small;
+}
+
+.news_list li a:hover {
+  font-weight: 800;
+}
+
+
+
+.news_list span:nth-child(2){
+  font-size: small;
+  color: rgb(168, 165, 165);
+  float: right;
+  line-height: 27px;
+}
+
+
+@media screen and (max-width:768px) {
+  
+  #layout {
+    display: grid;
+    width: auto;
+    margin: 0px auto;
+    grid-gap: 15px;
+  }
+  
+  .box1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin:0 auto 50px auto;
+  }
+
+  .box2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: 0 auto;
+  }
+
+  /* .box3 {
+    grid-row: 3/5;
+    grid-row-start: 3;
+    grid-column: 1/3;
+  } */
+
+  /* .box3 img {
+    width: 58%;
+  } */
+}
+
+@media screen and (max-width:1248px) {
+  .gra_left{
+    margin-left: 0px;
+  }
+
+}
