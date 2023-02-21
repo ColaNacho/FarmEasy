@@ -20,5 +20,6 @@ public interface FarmRepository {
 	FarmVO replyView(int board_id);
 	void insertComment(FarmCommentVo commentVo);
 	ArrayList<FarmCommentVo> listComment(int board_id);
+
 	
 }

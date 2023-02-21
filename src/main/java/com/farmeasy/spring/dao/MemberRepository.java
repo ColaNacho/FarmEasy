@@ -13,4 +13,5 @@ public interface MemberRepository {
 	 FarmMemberVO findPw(String m_name, String m_email, String m_id);
 	 void updatePw(String m_pw, String m_id, String m_email);
 	 void memberUpdate(FarmMemberVO mvo);
+	 int idCheck(String id);
 }

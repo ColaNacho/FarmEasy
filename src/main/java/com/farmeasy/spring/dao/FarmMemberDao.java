@@ -3,6 +3,7 @@ package com.farmeasy.spring.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -104,6 +105,14 @@ public class FarmMemberDao implements MemberRepository{
 		+ " m_name: " + mvo.getM_name() + " m_id: " + mvo.getM_id());
 		jdbcTemplate.update(query, mvo.getM_pw(), mvo.getM_email(), mvo.getM_name(), mvo.getM_id());
 	}
+
+	@Override
+	public int idCheck(String id) {
+		String query = "select count(*) from TB_MEMBER where m_id=?";
+		int cnt = jdbcTemplate.queryForObject(query, Integer.class , id);
+		return cnt;
+	}
+
 	
 
 

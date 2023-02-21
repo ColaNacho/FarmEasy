@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.farmeasy.spring.dao.FarmMemberVO;
 import com.farmeasy.spring.dao.FarmCommentVo;
@@ -31,6 +32,7 @@ import com.farmeasy.spring.service.InterMemberFindId;
 import com.farmeasy.spring.service.InterMemberInt;
 import com.farmeasy.spring.service.InterMemberMvo;
 import com.farmeasy.spring.service.MemberFindPwInter;
+import com.farmeasy.spring.service.MemberService;
 import com.farmeasy.spring.service.MemberUpdateInter;
 import com.farmeasy.spring.service.MemberUpdatePwInter;
 
@@ -113,6 +115,18 @@ public class FarmController {
 	@Autowired
 	@Qualifier("memberUpdate")
 	MemberUpdateInter memberUpdate;
+	
+	@Autowired
+//	@Qualifier("memberService")
+	MemberService memberService;
+	
+	@RequestMapping(value="/idCheck")
+	@ResponseBody
+	public int idCheck(@RequestParam("id") String id) {
+		int cnt = memberService.idCheck(id);
+		return cnt;
+		
+	}
 	
 	
 //	@GetMapping(value ="d_board")

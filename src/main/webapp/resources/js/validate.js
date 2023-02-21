@@ -13,6 +13,7 @@ function validate() {
     var m_pw = document.getElementById("m_pw");
     var m_email = document.getElementById("m_email");
     var m_mobile = document.getElementById("m_mobile");
+    var result = document.getElementById("result");
 
     // ------------ 이메일 까지 -----------
 
@@ -20,7 +21,7 @@ function validate() {
         return false;
     }
 
-   if(form1.idDuplication.value!="idCheck"){
+   if(result.value !== "0"){
     	alert("아이디 중복체크를 해주세요.");
         return false;
     }
@@ -72,13 +73,13 @@ function validate() {
 	}
 	
 	
-	function signUp_checkId(){
-		var m_id = document.getElementById('m_id').value;
-		document.location.href="/FarmEasy/memberCheckId.do?m_id="+m_id;
-
-		return true;
-	}
-	
+//	function signUp_checkId(){
+//		var m_id = document.getElementById('m_id').value;
+//		document.location.href="/springFarmEasy/idCheck?id="+m_id;
+//
+//		return true;
+//	}
+//	
 	
 	function editInputPw(){
 		var m_pw = document.getElementById('m_id').value;

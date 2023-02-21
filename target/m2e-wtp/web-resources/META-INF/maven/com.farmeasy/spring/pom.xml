@@ -53,7 +53,7 @@
 			<artifactId>ojdbc8</artifactId>
 			<version>19.3.0.0</version>
 		</dependency>		
-				
+			
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -62,12 +62,21 @@
 		</dependency>	
 		
 		<!-- JSON -->
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.13</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.2</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
 		<!-- Form Vaildation -->
 		<dependency>
 		<groupId>javax.validation</groupId>
