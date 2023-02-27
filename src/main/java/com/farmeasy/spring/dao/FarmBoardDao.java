@@ -16,7 +16,7 @@ public class FarmBoardDao implements FarmRepository{
 	JdbcTemplate jdbcTemplate;
 	
 	private class EmpMapper implements RowMapper<FarmVO>{
-
+  
 		@Override
 		public FarmVO mapRow(ResultSet rs, int rowNum) throws SQLException {
 			FarmVO emp = new FarmVO();

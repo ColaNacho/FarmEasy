@@ -114,7 +114,7 @@
 							<input type="hidden" type="text" name="board_id" value="${content_view.board_id}" />
 							<a href="#"><button type="button" class="board_return" onclick="deleteCheck()">삭제</button></a>
 							<a href="/d_board"><button type="button" class="board_return">목록</button></a>
-						</c:when>
+						</c:when>   
 						<c:when test="${mvo.m_id eq null}">
 							<a href="/d_board"><button type="button" class="board_return">목록</button></a>
 						</c:when>
