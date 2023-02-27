@@ -106,7 +106,7 @@
 			</div>
 			<p class="mt-4">${content_view.board_content}</p>
 			<div class="board_write">
-				<c:choose>
+				<c:choose> 
 						<c:when test="${mvo.m_id.equals(content_view.m_id)}">
 							<a href="/d_reply_write?bId=${content_view.board_id}"><input type="hidden" value="${bGroup}" />
 							<button type="button" class="board_return"> 답글</button> </a>
@@ -119,6 +119,8 @@
 							<a href="/d_board"><button type="button" class="board_return">목록</button></a>
 						</c:when>
 						<c:otherwise>
+							<a href="/d_reply_write?bId=${content_view.board_id}"><input type="hidden" value="${bGroup}" />
+							<button type="button" class="board_return"> 답글</button> </a>
 							<a href="/d_board"><button type="button" class="board_return">목록</button></a>
 						</c:otherwise>
 				</c:choose>
