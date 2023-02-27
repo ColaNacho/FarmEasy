@@ -45,7 +45,7 @@
 			<li class="depth1"><a href="/d_board">게시판</a>
 				<ul class="submenu">
 					<li><a href="/d_board">게시판</a></li>
-					<li><a href="d_notice">갤러리</a></li>
+					<li><a href="/d_notice">갤러리</a></li>
 				</ul>
 			</li>
 		</ul>

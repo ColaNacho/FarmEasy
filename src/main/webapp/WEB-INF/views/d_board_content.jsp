@@ -42,7 +42,7 @@
 	<nav class="navbar">
 		<!-- logo -->
 		<div class="navbar-logo">
-			<a href="/index.jsp">귀농쉽농</a>
+			<a href="/index">귀농쉽농</a>
 		</div>
 		<!-- menu -->
 		<ul class="navbar-menu">
@@ -61,7 +61,7 @@
 			<li class="depth1"><a href="/d_board">게시판</a>
 				<ul class="submenu">
 					<li><a href="/d_board">게시판</a></li>
-					<li><a href="d_notice">갤러리</a></li>
+					<li><a href="/d_notice">갤러리</a></li>
 				</ul>
 			</li>
 		</ul>

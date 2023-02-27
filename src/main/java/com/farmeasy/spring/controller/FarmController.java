@@ -120,7 +120,7 @@ public class FarmController {
 //	@Qualifier("memberService")
 	MemberService memberService;
 	
-	@RequestMapping(value="/idCheck")
+	@RequestMapping(value="/idCheck",  method=RequestMethod.POST)
 	@ResponseBody
 	public int idCheck(@RequestParam("id") String id) {
 		int cnt = memberService.idCheck(id);
@@ -342,7 +342,6 @@ public class FarmController {
 		memberUpdatePw.execute(m_id, m_pw, m_email);
 		return "e_login";
 	}
-	
 	
 	@RequestMapping("/e_logout")
 	public String MemberLogout(HttpSession session) {
