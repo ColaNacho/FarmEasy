@@ -11,7 +11,7 @@ import com.farmeasy.spring.service.IPolicyService;
 
 @Controller
 public class PolicyController {
-
+  
 	@Autowired
 	@Qualifier("policyListServiceImpl")
 	IPolicyService policyListServiceImpl;

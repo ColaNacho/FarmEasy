@@ -85,7 +85,7 @@ public class FarmMemberDao implements MemberRepository{
 	@Override
 	public FarmMemberVO findPw(String m_name, String m_email, String m_id) {
 		String query = "SELECT * FROM TB_MEMBER WHERE m_name=? and m_email=? and m_id=?";
-		try {
+		try {  
 			return jdbcTemplate.queryForObject(query, new MemberMapper(), m_name, m_email, m_id);
 		} catch (Exception e) {
 			return null;
