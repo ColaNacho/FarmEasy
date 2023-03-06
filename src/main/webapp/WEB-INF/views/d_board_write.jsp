@@ -29,7 +29,7 @@
 	<nav class="navbar">
 		<!-- logo -->
 		<div class="navbar-logo">
-			<a href="/index.jsp">귀농쉽농</a>
+			<a href="/index">귀농쉽농</a>
 		</div>
 		<!-- menu -->
 		<ul class="navbar-menu">
